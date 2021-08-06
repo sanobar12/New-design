@@ -1,38 +1,305 @@
-.App {
+
+body {
+  line-height: 1;
+  word-wrap: break-word;
+  overflow-x: hidden;
+}
+body:before {
+  content: "";
+  display: block;
+  background-attachment: scroll;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-size: 11px, auto;
+  background-position: center, 0% 0%;
+  background-repeat: repeat, repeat;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%3Cline%20x1%3D%22256%22%20y1%3D%220%22%20x2%3D%22512%22%20y2%3D%22256%22%20stroke%3D%22rgba(0,0,0,0.502)%22%20stroke-width%3D%226.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22256%22%20x2%3D%22256%22%20y2%3D%22512%22%20stroke%3D%22rgba(0,0,0,0.502)%22%20stroke-width%3D%226.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20%2F%3E%3C%2Fsvg%3E"),
+    linear-gradient(132deg, #740000 46%, #000000 100%);
+}
+.Container {
+  height: auto;
+  color: floralwhite;
+}
+.head ul{
+  font-family: impact;
+  margin-top: 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  color:#FF9928;
+}
+.head ul a{
+  color:#FF9928;
+  font-size: 20px;
+}
+.head ul a:hover{
+  color:yellow;
+}
+.head1{
+  text-align: center;
+  margin-top: 30px;
+}
+.head ul .list{
+  list-style: none;
+  margin-right: 30px;
+}
+.linc{
+  color: #FF9928;
+  list-style: none;
+}
+h1{
+  color: #FF9928;
+  text-align: center;
+  font-size: 75px;
+  font-family: impact;
+  letter-spacing:2px;
+}
+.sub-head{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3{
+  color: #FF9928;
+  font-size: 25px;
+  font-family: impact;
+  text-align: center;
+}
+.two{
+  margin-top: 30px;
+  padding-right: 30px;
+}
+.head-link li{
+  color: #FF9928;
+  font-size: 22px;
+  font-family:  serif;
+  padding: 8px;
+}
+.head-link{
+  border-top: 2px solid #FF9928;
+  margin-top: 30px;
+}
+.two .headings li{
+  font-size: 17px;
+  letter-spacing: 0.7px;
+  padding: 7px 7px;
+ font-family:  Impact;
+  list-style: none;
+ border: 1px solid rgb(10, 10, 10);
+ border-style: dashed;
+  background-color: rgb(133, 11, 11);
+  text-align: center;
+}
+.two .headings ul :hover{
+  background-color: #FF9928;
+}
+.headings .scrol{
+  height: 298px;
+overflow: hidden;
+overflow-y: scroll
+}
+ .one .imgg{
+  width: 75vh;
+  height: 75vh;
+  margin-top: 50px;
+  margin: 0 0 50px 50px; 
+} 
+.four img {
+  width: 100vh;
+ height: 100vh;
+}
+.icon{
+  text-align: center;
+  font-size: 25px;
+}
+.icon :hover{
+  color: yellow;
+}
+.icon a{
+  color: #FF9928;
+}
+.four .image-responsive{
+  width: 80vh;
+  height: 50vh;
+  padding-top:30px;
+}
+.five{
+  border-top: 2px solid #FF9928;
+}
+.five .tble{
+  color: #FF9928;
+  font-family: impact;
+  line-height: 1;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+.tble td{
+  padding: 25px;
+}
+.tble a{
+  border-bottom: 2px solid #FF9928;
+ margin: 10px;
+}
+.tble .tble-row{
+  border-bottom: 0.5px solid #aa7437;
+  padding-left: 20px;
+}
+.customPara{
+  font-size: 20px;
+  color: #FF9928;
+  font-family: impact;
+  letter-spacing: 1px;
+  line-height: 2;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.mainSlider {
+  font-size: 1.25em;
+  line-height: 1.85;
+  font-weight: 600;
+}
+.slider-item1,
+.slider-item2,
+.slider-item3 {
+  font-family: "Roboto", "sans-serif";
+  color: #ff9928;
+  position: absolute;
+  text-align: center;
+  display: block;
+  font-size: 1em;
+  text-shadow: 2px 2px #000000;
+  animation-duration: 30s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@media only screen{
+  .slider-item1,
+  .slider-item2,
+  .slider-item3 {
+    font-size: 1.2em;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.slider-item1 {
+  animation-name: anim-1;
 }
-
-.App-link {
-  color: #61dafb;
+.slider-item2 {
+  animation-name: anim-2;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.slider-item3 {
+  animation-name: anim-3;
+}
+@keyframes anim-1 {
+  0%,
+  8.3% {
+    left: 50%;
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  8.3%,
+  25% {
+    left: 53.5%;
+    opacity: 1;
+  }
+  33.33%,
+  100% {
+    left: 56%;
+    opacity: 0;
   }
 }
+@keyframes anim-2 {
+  0%,
+  33.33% {
+    left: 50%;
+    opacity: 0;
+  }
+  41.63%,
+  58.29% {
+    left: 53.5%;
+    opacity: 1;
+  }
+  66.66%,
+  100% {
+    left: 56%;
+    opacity: 0;
+  }
+}
+@keyframes anim-3 {
+  0%,
+  66.66% {
+    left: 50%;
+    opacity: 0;
+  }
+  74.96%,
+  91.62% {
+    left: 53.5%;
+    opacity: 1;
+  }
+  100% {
+    left: 56%;
+    opacity: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .slider-item1 {
+    animation-name: moanim-1;
+  }
+  .slider-item2 {
+    animation-name: moanim-2;
+  }
+  .slider-item3 {
+    animation-name: moanim-3;
+  }
+}
+@keyframes moanim-1 {
+  0%,
+  8.3% {
+    left: 0%;
+    opacity: 0;
+  }
+  8.3%,
+  25% {
+    left: 10%;
+    opacity: 1;
+  }
+  33.33%,
+  100% {
+    left: 20%;
+    opacity: 0;
+  }
+}
+@keyframes moanim-2 {
+  0%,
+  33.33% {
+    left: 0%;
+    opacity: 0;
+  }
+  41.63%,
+  58.29% {
+    left: 10%;
+    opacity: 1;
+  }
+  66.66%,
+  100% {
+    left: 20%;
+    opacity: 0;
+  }
+}
+@keyframes moanim-3 {
+  0%,
+  66.66% {
+    left: 0%;
+    opacity: 0;
+  }
+  74.96%,
+  91.62% {
+    left: 10%;
+    opacity: 1;
+  }
+  100% {
+    left: 20%;
+    opacity: 0;
+  }
+}
+/* SLIDER  */
